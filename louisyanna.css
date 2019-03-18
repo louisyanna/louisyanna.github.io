@@ -45,3 +45,7 @@
 .menu-font-color{
     color: #999;
 }
+
+.bounded-height {
+    height: 18px;
+}
