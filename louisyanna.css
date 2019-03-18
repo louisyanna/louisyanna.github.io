@@ -45,3 +45,7 @@
 .menu-font-color{
     color: #999;
 }
+
+.dropdown-toggle::after {
+    display:none;
+}
