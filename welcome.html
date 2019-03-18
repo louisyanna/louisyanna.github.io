@@ -1,22 +1,71 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="description" content="">
 
     <link rel="shortcut icon" type="image/x-icon" href="https://louisyanna.github.io/favicon.ico?">
-
     <title>Welcome to louisyanna</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="louisyanna.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid">
+
+
+<nav class="site-header sticky-top">
+  <div class="container d-flex flex-column flex-md-row">
+    <a class="py-2" href="#">
+      <img src="favicon.ico"></img>
+    </a>
+<div class="col-md-3 text-center">
+    <a class="py-2 d-none d-md-inline-block" href="#">RSVP</a>
+</div>
+<div class="col-md-3 text-center">
+    <a class="py-2 d-none d-md-inline-block" href="#info-en">Details</a>
+    <div class="py-2 d-none d-md-inline-block menu-font-color">/</div>
+    <a class="py-2 d-none d-md-inline-block" href="#info-fr">D&eacute;tails</a>
+</div>
+<div class="col-md-3 text-center">
+    <a class="py-2 d-none d-md-inline-block" href="#map">Map</a>
+    <div class="py-2 d-none d-md-inline-block menu-font-color">/</div>
+    <a class="py-2 d-none d-md-inline-block" href="#map">Carte</a>
+</div>
+<div class="col-md-3 text-center">
+    <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+</div>
+  </div>
+</nav>
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-10 p-lg-10 mx-auto my-5">
+    <!-- <h1 class="display-4">Anna &amp; Louis</h1> -->
+    <p class="lead font-weight-normal">
       <img class="img-fluid img-thumbnail"
       	   src="cover/cover.png" usemap="#image-map"
-      	   alt="Save the Date: Aug. 25, 2019">
+      	   alt="Save the Date: Aug. 25, 2019"
+	   id="cover"></img>
       <map name="image-map">
 	<area alt="Paris 66.8km" title="venue"
 	      href="https://goo.gl/maps/6SQhiM9M8Ax"
@@ -28,16 +77,54 @@
 	      href="https://louisyanna.us"
 	      coords="5,1293,994,1364" shape="rect">
       </map>
-    </div>
+    </p>
+    <p><a class="btn btn-outline-secondary" href="#">RSVP</a></p>
+  </div>
+</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./node_modules/image-map-resizer/js/imageMapResizer.min.js"></script>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <!-- <a id="info-en"> -->
+    <div class="py-1">
+      <h2 class="display-5">Wedding of Anna &amp; Louis</h2>
+      <!-- <p class="lead">And an even wittier subheading.</p> -->
+    </div>
+    <p>Date: August 25th, 2019</p>
+    <p>Venue: Domaine de la Thibaudi&egrave;re<br/> (a shuttle from Paris will be provided)</p>
+    <p><i>Additional details to come</i></p>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <!-- <a id="info-fr"> -->
+    <div class="py-1">
+      <h2 class="display-5">Mariage de Anna &amp; Louis</h2>
+      <!-- <p class="lead">And an even wittier subheading.</p> -->
+    </div>
+    <p>Date : 25 ao&ucirc;t 2019</p>
+    <p>Lieu : Domaine de la Thibaudi&egrave;re<br/>
+      (une navette de Paris sera mise à disposition)</p>
+    <p><i>D&eacute;tails compl&eacute;mentaires &agrave; venir</i></p>
+    <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
+  </div>
+</div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <a id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2682216.6180903474!2d0.941633!3d48.9658203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e41d4464ce042f%3A0xff909227951dacd4!2sDomaine+de+la+Thibaudi%C3%A8re!5e0!3m2!1sen!2sus!4v1552880362133" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark text-white">
+  <a id="contact"/>
+  <a class="text-white" href="mailto:us@louisyanna.us">us@louisyanna.us</a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+														   <script type="text/javascript" src="./node_modules/image-map-resizer/js/imageMapResizer.min.js"></script>
     <script type="text/javascript">
       $('map').imageMapResize();
     </script>
-  </body>
+
+</body>
 </html>
