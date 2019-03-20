@@ -36,7 +36,8 @@
   <div class="container d-none d-md-flex flex-md-column flex-md-row">
     <div class="row">
       <div class="col-md-1">
-	<a class="btn pr-4" role="button" href="welcome.html#">
+	<a class="btn pr-4" role="button" href="welcome.html#"
+	   onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
 	  <img class="img bounded-height" src="favicon-large.png" alt="home"></img>
 	</a>
       </div>
@@ -71,7 +72,8 @@
   <div class="container d-flex flex-column flex-row d-md-none">
     <div class="row">
       <div class="col-1">
-	  <a class="btn btn-link pr-4" role="button" href="welcome.html#">
+	  <a class="btn btn-link pr-4" role="button" href="welcome.html#"
+	     onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
 	    <img class="img bounded-height" src="favicon-large.png" alt="home"></img>
 	  </a>
       </div>
@@ -174,6 +176,11 @@
 	src="./node_modules/image-map-resizer/js/imageMapResizer.min.js"></script>
 <script type="text/javascript">
   $('map').imageMapResize();
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(this).scrollTop(0);
+  });
 </script>
 
 </body>
