@@ -1,3 +1,5 @@
+
+
 .container {
   max-width: 960px;
 }
@@ -46,6 +48,21 @@
     color: #999;
 }
 
+.fill-menu-font-color {
+  fill: #999;
+}
+
 .bounded-height {
     height: 20px;
+}
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 10px;
 }

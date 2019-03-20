@@ -97,6 +97,19 @@
   </div>
 </nav>
 
+<div class="row">
+  <div class="col-2 offset-10 fixed-bottom text-center">
+    <a href="#top" class="btn btn-outline-secondary bg-dark fill-menu-font-color"
+       id="go-to-top" title="Go to top"
+       onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 10 16"><path fill-rule="evenodd" d="M5 3L0 9h3v4h4V9h3L5 3z"/></svg>
+      top
+    </a>
+  </div>
+</div>
+
+
+
 <div class="position-relative overflow-hidden px-1 py-3 p-md-5 m-md-3 text-center bg-light">
   <div class="col-md-11 mx-auto">
     <div class="py-1">
@@ -108,12 +121,6 @@
       height="2450"
       frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
   </div>
-  <span id="top-link-block" class="hidden">
-    <a href="#top" class="btn  btn-outline-secondary"
-       onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-      Go back to top
-    </a>
-  </span>
 </div>
 
 
@@ -140,6 +147,16 @@
   $(document).ready(function(){
       $(this).scrollTop(0);
   });
+</script>
+<script  type="text/javascript">
+// Only enable if the document has a long scroll bar
+// Note the window height + offset
+if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-block').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
 </script>
 </body>
 </html>
