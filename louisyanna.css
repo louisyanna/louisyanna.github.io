@@ -55,6 +55,10 @@
     height: 20px;
 }
 
+.no-border {
+    border: 0;
+}
+
 #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px;
