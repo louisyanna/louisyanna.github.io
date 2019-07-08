@@ -47,7 +47,10 @@
         <div class="col-md-11 text-md-center">
           <div class="container d-flex flex-column flex-md-row">
             <div class="col-md-3 text-center">
-              <a class="py-2 d-none d-md-inline-block" href="welcome.html#info">D(e|&eacute;)tails</a>
+              <a class="py-2 d-none d-md-inline-block text-white btn btn-primary" href="welcome.html#rsvp">RSVP</a>
+            </div>
+            <div class="col-md-3 text-center">
+              <a class="py-2 d-none d-md-inline-block" href="welcome.html#info">Information</a>
               <!-- <a class="py-2 d-none d-md-inline-block" href="welcome.html#info">Details</a>
               <div class="py-2 d-none d-md-inline-block menu-font-color">/</div>
               <a class="py-2 d-none d-md-inline-block" href="welcome.html#info">D&eacute;tails</a> -->
@@ -57,9 +60,6 @@
             </div>
             <div class="col-md-3 text-center">
               <a class="py-2 d-none d-md-inline-block" href="welcome.html#contact">Contact</a>
-            </div>
-            <div class="col-md-3 text-center">
-              <a class="py-2 d-none d-md-inline-block text-white btn btn-primary" href="welcome.html#rsvp">RSVP</a>
             </div>
           </div>
         </div>
@@ -87,9 +87,9 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="welcome.html#"><img class="img bounded-height" src="favicon-large.png"
                   alt="home" /></a>
+              <a class="dropdown-item" href="welcome.html#rsvp">RSVP</a>
               <a class="dropdown-item" href="welcome.html#info">Information</a>
               <a class="dropdown-item" href="welcome.html#contact">Contact</a>
-              <a class="dropdown-item" href="welcome.html#rsvp">RSVP</a>
             </div>
           </div>
         </div>
@@ -97,36 +97,25 @@
     </div>
   </nav>
 
-
-  <!-- <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-8 col-lg-5 p-lg-10 mx-auto">
-      <p class="lead font-weight-normal">
-        <img class="img-fluid img-thumbnail" src="cover/cover.png" usemap="#image-map"
-          alt="Save the Date: Aug. 25, 2019" id="cover" />
-        <map name="image-map">
-          <area alt="Paris 66.8km" title="venue" href="https://goo.gl/maps/6SQhiM9M8Ax" coords="1,1,440,105"
-            shape="rect">
-          <area alt="August 25, 2019" title="date"
-            href="https://www.timeanddate.com/counters/fullscreen.html?mode=m&year=2019&month=8&day=25&hour=12&min=30&sec=0&p0=195&msg=Anna%20%26%20Louis"
-            coords="572,1,992,105" shape="rect">
-          <area alt="https://louisyanna.us/welcome.html" title="website" href="https://louisyanna.us/welcome.html"
-            coords="5,1293,994,1364" shape="rect">
-        </map>
-      </p>
-      <p><a class="btn btn-outline-secondary" href="welcome.html#rsvp">RSVP</a></p>
-      <div class="invisible"></div>
-  </div>
-  </div> -->
-
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-9 col-lg-9 p-lg-10 mx-auto">
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+    <div class="col-md-10 col-lg-8 p-lg-10 mx-auto">
       <p class="lead font-weight-normal">
         <img class="img-fluid img-thumbnail border border-dark" src="favicon-pictures.jpg" alt="Aug. 25, 2019"
-          id="cover" />
+          id="pictures" />
       </p>
     </div>
   </div>
 
+  <div id="rsvp" class="position-relative overflow-hidden px-1 py-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-11 mx-auto">
+      <!-- <iframe id="rsvp-form" class="no-border"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd3ncsH70fSmoEs9c6bNvVKJm0gCwKZp-hM5Gmm9wljUoM2ew/viewform?embedded=true"
+          style="width: 100%;" height="900"></iframe> -->
+      <iframe id="rsvp-form" class="no-border"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeLscSwBpRJmYsRAPCI6RLaL8MZv9CuyoyP52qj8xqOfGxA1w/viewform?embedded=true"
+        style="width: 100%;" height="800"></iframe>
+    </div>
+  </div>
 
   <div id="info" class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="bg-dark mr-md-3 py-5 px-3 py-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -140,7 +129,7 @@
       <!-- <p><i>Additional details to come</i></p> -->
       <p>
         We look forward to spending a day in the countryside celebrating
-        love, life, fresh air, bbq, and cake with our friends and
+        love, life, fresh air, bbq, cheese, and cake with our friends and
         families!
       </p>
       <hr class="border-white width-25" />
@@ -212,7 +201,7 @@
       <hr class="border-dark width-25" />
       <p>Liste de mariage</p>
       <p>
-        Si vous souhaitez nous faire un cadeau, nous avons ouvert un liste sur <a
+        Si vous souhaitez nous faire un cadeau, nous avons ouvert une liste sur <a
           href="www.zola.com/registry/louisyanna">Zola</a> et <a
           href="https://slowdance.com/registry/louisyanna">Slowdance</a>.
       </p>
@@ -240,30 +229,42 @@
     </div>
   </div>
 
-  <div id="rsvp" class="position-relative overflow-hidden px-1 py-3 p-md-5 m-md-3 text-center bg-dark">
-    <div class="col-md-11 mx-auto">
-      <!-- <iframe id="rsvp-form" class="no-border"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd3ncsH70fSmoEs9c6bNvVKJm0gCwKZp-hM5Gmm9wljUoM2ew/viewform?embedded=true"
-        style="width: 100%;" height="900"></iframe> -->
-      <iframe id="rsvp-form" class="no-border"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeLscSwBpRJmYsRAPCI6RLaL8MZv9CuyoyP52qj8xqOfGxA1w/viewform?embedded=true"
-        style="width: 100%;" height="800"></iframe>
-    </div>
-  </div>
-
   <div id="paris" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="py-1">
+      <h2 class="display-5"><a
+          href="https://www.google.com/maps/d/viewer?mid=1MzIW8tgW20JOmaMTiwyRw8MsoBovWggX&ll=48.86139941974557%2C2.3349845499999446&z=13">Paris
+          Recommendations</a></h2>
+    </div>
     <div class="embed-responsive embed-responsive-4by3">
       <iframe class="embed-responsive-item"
         src="https://www.google.com/maps/d/embed?mid=1MzIW8tgW20JOmaMTiwyRw8MsoBovWggX" allowfullscreen></iframe>
     </div>
   </div>
 
-  <div id="registry" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-    <!-- <div class="embed-responsive embed-responsive-4by3"> -->
-    <a class="zola-registry-embed" href="www.zola.com/registry/louisyanna" data-registry-key="louisyanna">Our Zola
-      Wedding Registry</a>
-    <script>!function (e, t, n) { var s, a = e.getElementsByTagName(t)[0]; e.getElementById(n) || (s = e.createElement(t), s.id = n, s.async = !0, s.src = "https://widget.zola.com/js/widget.js", a.parentNode.insertBefore(s, a)) }(document, "script", "zola-wjs");</script>
-    <!-- </div> -->
+  <!-- <div id="registry" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+  <a class="zola-registry-embed" href="www.zola.com/registry/louisyanna" data-registry-key="louisyanna">Our Zola
+    Wedding Registry</a>
+  <script>!function (e, t, n) { var s, a = e.getElementsByTagName(t)[0]; e.getElementById(n) || (s = e.createElement(t), s.id = n, s.async = !0, s.src = "https://widget.zola.com/js/widget.js", a.parentNode.insertBefore(s, a)) }(document, "script", "zola-wjs");</script>
+  </div> -->
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+    <div class="col-md-8 col-lg-5 p-lg-10 mx-auto">
+      <p class="lead font-weight-normal">
+        <img class="img-fluid img-thumbnail" src="cover/cover.png" usemap="#image-map"
+          alt="Save the Date: Aug. 25, 2019" id="cover" />
+        <map name="image-map">
+          <area alt="Paris 66.8km" title="venue" href="https://goo.gl/maps/6SQhiM9M8Ax" coords="1,1,440,105"
+            shape="rect">
+          <area alt="August 25, 2019" title="date"
+            href="https://www.timeanddate.com/counters/fullscreen.html?mode=m&year=2019&month=8&day=25&hour=12&min=30&sec=0&p0=195&msg=Anna%20%26%20Louis"
+            coords="572,1,992,105" shape="rect">
+          <area alt="https://louisyanna.us/welcome.html" title="website" href="https://louisyanna.us/welcome.html"
+            coords="5,1293,994,1364" shape="rect">
+        </map>
+      </p>
+      <!-- <p><a class="btn btn-outline-secondary" href="welcome.html#rsvp">RSVP</a></p>
+          <div class="invisible"></div> -->
+    </div>
   </div>
 
   <div id="map" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
